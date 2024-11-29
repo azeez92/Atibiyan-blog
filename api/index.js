@@ -1,6 +1,7 @@
 import express from 'express';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
+import userRouter from './routes/user.route.js'
 
 
 dotenv.config()
@@ -24,5 +25,6 @@ app.listen(3000, () =>{
 }).then
 
 
-// db user: azeezsodiq18
-// db password: UfjjokLZsFa7rq1L
+app.use ('/api/user', userRouter)
+
+
