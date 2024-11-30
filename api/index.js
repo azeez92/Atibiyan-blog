@@ -15,6 +15,7 @@ mongoose.connect(process.env.MONGO)
         console.log('MongoDB connection error:', err);
     });
 
+
 const app = express();
 
 // Middleware to parse JSON request bodies
